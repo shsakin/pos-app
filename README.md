@@ -1,4 +1,5 @@
 Live link: https://pos-app-khaki.vercel.app/
+
 PS: Please wait a few moment if the app doesn't work. The free version of render sits idle after inactivity need a few moment to be active again.
 
 POS Application Features
