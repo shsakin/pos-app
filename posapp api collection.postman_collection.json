@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "93e5926a-cd6f-4eaa-90a9-9765803c3757",
+		"name": "posapp api collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33319465"
+	},
+	"item": [
+		{
+			"name": "login jwt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"shsakin2002@gmail.com\",\r\n  \"password\": \"12345678\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2hzYWtpbjIwMDJAZ21haWwuY29tIiwiaWF0IjoxNzY5NjAyOTQzLCJleHAiOjE3Njk2ODkzNDN9.ekA-e7vTx1ChABn4XVw0PVwKdnQ6LmNh3O3omEldgks",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2hzYWtpbjIwMDJAZ21haWwuY29tIiwiaWF0IjoxNzY5NjAyOTQzLCJleHAiOjE3Njk2ODkzNDN9.ekA-e7vTx1ChABn4XVw0PVwKdnQ6LmNh3O3omEldgks",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Laptop\",\r\n  \"sku\": \"LAP-001\",\r\n  \"price\": 999.99,\r\n  \"stock_quantity\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post sales",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2hzYWtpbjIwMDJAZ21haWwuY29tIiwiaWF0IjoxNzY5NjAyOTQzLCJleHAiOjE3Njk2ODkzNDN9.ekA-e7vTx1ChABn4XVw0PVwKdnQ6LmNh3O3omEldgks",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"saleItems\": [\r\n    {\r\n      \"productId\": 4,\r\n      \"quantity\": 1,\r\n      \"price\": 999.99\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sales",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoic2hzYWtpbjIwMDJAZ21haWwuY29tIiwiaWF0IjoxNzY5NjAyOTQzLCJleHAiOjE3Njk2ODkzNDN9.ekA-e7vTx1ChABn4XVw0PVwKdnQ6LmNh3O3omEldgks",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/sales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"sales"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
