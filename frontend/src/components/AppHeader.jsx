@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, Button, Dropdown, Space, Menu } from 'antd';
-import { UserOutlined, LogoutOutlined, HomeOutlined, ShoppingOutlined } from '@ant-design/icons';
+import { UserOutlined, LogoutOutlined, HomeOutlined, ShoppingOutlined, ShoppingCartOutlined } from '@ant-design/icons';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuthContext } from '../context/AuthContext';
 
@@ -28,6 +28,12 @@ const AppHeader = () => {
       icon: <ShoppingOutlined />,
       label: 'Products',
       onClick: () => navigate('/products'),
+    },
+    {
+      key: '/sales',
+      icon: <ShoppingCartOutlined />,
+      label: 'Sales',
+      onClick: () => navigate('/sales'),
     },
   ];
 

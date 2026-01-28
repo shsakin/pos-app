@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Products from './pages/Products';
+import Sales from './pages/Sales';
 import './App.css';
 
 const queryClient = new QueryClient();
@@ -31,6 +32,14 @@ function App() {
               element={
                 <ProtectedRoute>
                   <Products />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/sales"
+              element={
+                <ProtectedRoute>
+                  <Sales />
                 </ProtectedRoute>
               }
             />
