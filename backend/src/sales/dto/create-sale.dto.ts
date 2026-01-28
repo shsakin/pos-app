@@ -1,5 +1,5 @@
 import { Type } from 'class-transformer';
-import { IsArray, IsNumber, IsPositive, ValidateNested, Min } from 'class-validator';
+import { IsArray, IsNumber, IsPositive, ValidateNested} from 'class-validator';
 
 export class CreateSaleItemDto {
   @IsNumber()
